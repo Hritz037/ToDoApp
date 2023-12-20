@@ -1,0 +1,11 @@
+image: gitpod/workspace-full:2023-02-27-14-39-56
+tasks:
+  - name: todos
+    before: |
+      npm install
+    command: |
+      gp open README.md
+ports:
+  - port: 8888
+    onOpen: open-browser
+    visibility: public
